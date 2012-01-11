@@ -7,7 +7,7 @@ include_once 'phing/types/RegularExpression.php';
 /**
  * Finds urls in CSS files and appends them with a query var representing the last modification time.
  *
- * @author    Dan Bissonnet <dan@danisadesigner.com>
+ * @author    Dan Bissonnet
  */
 class VersionCSSURLs extends BaseFilterReader implements ChainableReader {
 	private $filepath;
@@ -72,6 +72,4 @@ class VersionCSSURLs extends BaseFilterReader implements ChainableReader {
         $newFilter->setProject($this->getProject());
         return $newFilter;
     }
-   
-
 }
